@@ -68,6 +68,14 @@ Request body:
 }
 ```
 
+cURL example:
+
+```bash
+curl -X POST http://localhost:3000/flags \
+  -H "Content-Type: application/json" \
+  -d '{"key":"new_checkout","enabled":true,"environment":"prod"}'
+```
+
 ---
 
 ### Fetch flags for an environment
@@ -80,6 +88,12 @@ Example:
 
 ```
 GET /flags/prod
+```
+
+cURL example:
+
+```bash
+curl http://localhost:3000/flags/prod
 ```
 
 ---
